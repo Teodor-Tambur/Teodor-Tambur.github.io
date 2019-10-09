@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+ul{
+  list-style: none;
+}
+
 nav ul{
   float: right;
   display: flex;
