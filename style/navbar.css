@@ -3,11 +3,6 @@
   --secondary-color:#ff8a8a;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 a{
   text-decoration: none;
   color: #000000;
