@@ -20,9 +20,82 @@
     </nav>
     <div class="wrapper">
         <style> 
+            :root{
+  --main-color:#ff0000;
+  --secondary-color:#ff8a8a;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  background:#A9A9A9;
+  height: 100px;
+  padding: 10px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 300ms;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  line-height: 80px;
+  color: black;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+
+.hover--underline {
+  position: relative;
+}
+
+.hover--underline::before {
+content: '';
+position: absolute;
+width: 100%;
+transform:scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color:var(--main-color);
+transform-origin: bottom right;
+transition: 300ms ease-out;
+}
+
+.hover--underline:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav ul li a.active{
+  color:var(--main-color);
+}
+
+nav ul li a:hover{
+  color:var(--secondary-color);
+}
             body {
   height: 100%;
-  background-image: linear-gradient(135deg, #6A5ACD, #87CEEB);
+  background-image: linear-gradient(135deg, #F8F8FF, #F8F8FF);
 }
          h1 {
   color: black;
@@ -31,7 +104,9 @@
          p {
   color: black;
   text-align: center;
-}</style>
+}   
+        </style>
+        <br>
         <br>
         <br>
         <br>
