@@ -1,3 +1,34 @@
 *{
   font-family: 'Montserrat';
+  padding: 0;
+  margin: 0;
+}
+
+div.background section.bg {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(img/mainbg.jpg);
+  background-size: cover;
+  background-position: fixed center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: initial;
+}
+
+div.contentent {
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.9;
+  cursor: default;
+}
+
+div.contentent p {
+  padding-top: 15px;
 }
