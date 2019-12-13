@@ -2,32 +2,31 @@
   font-family: 'Montserrat';
 }
 
-.mainbox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #FFFFFF;
-  transform: translate(-50%,-50%);
-  width: 800px;
-  padding: 40px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  box-shadow: 1px 4px 18px rgba(0, 0, 0, 0.5);
+div.background section.bg {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(img/mainbg.jpg);
+  background-size: cover;
+  background-position: fixed center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: initial;
 }
 
-.mainbox img.selfie {
-  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  float: left;
+div.contentent {
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.9;
+  cursor: default;
 }
 
-.mainbox h4.name {
-  text-align: center;
-  font-size: 24px;
-  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
-}
-
-.mainbox p.text {
-  text-align: center;
-  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+div.contentent p {
+  padding-top: 15px;
 }

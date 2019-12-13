@@ -4,3 +4,33 @@ body {
   background-size: cover;
   background-image: linear-gradient(to right, #673ab7, #512da8);
 }
+
+.mainbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%,-50%);
+  width: 800px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 1px 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.mainbox img.selfie {
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  float: left;
+}
+
+.mainbox h4.name {
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mainbox p.text {
+  text-align: center;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+}
